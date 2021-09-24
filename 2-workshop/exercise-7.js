@@ -23,6 +23,21 @@ function exercise7() {
   //
   // Write code between the lines (below)
   // -----------------------------------------------------------------
+    for (let time = 0; time <= 23; time++) {
+    if (time <= 5) {
+      console.log(`It's ${time}h. Time to sleep!`)
+    } else if (time = 6 || 12 || 18) {
+      console.log(`It's ${time}h. Time to eat!`)
+    }
+    if (time >=22) {
+      console.log(`It's ${time}h. Time to sleep!`)
+
+    }else {
+        console.log(`It's ${time}h. Time to train!`)
+      }
+    }
+    // use else to set conditions
+    
   // -----------------------------------------------------------------
   // Write code between the lines (above)
   //
@@ -32,7 +47,7 @@ function exercise7() {
   //
   //
 }
-
+exercise7()
 // Once you are done type the following in the terminal to test your answer(s).
 // yarn test exercise-7
 

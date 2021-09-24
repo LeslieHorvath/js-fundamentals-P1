@@ -7,13 +7,13 @@ _We will correct these exercises in class._
 ```js
 // Look at these expressions below and determine whether they evaluate to true or false
 
-1. true || false
-2. false && false
-3. 1 < 2 && 2 > 1
-4. 31 < 13 || 1 < 2 && 3 > 1
-5. 400 <= 400 && 399 < 400 && (30 > 31 || 400 > 31)
-6. true && false && false || false && true
-7. true && false || true || false
+1. true || false // true
+2. false && false // false
+3. 1 < 2 && 2 > 1 // true
+4. 31 < 13 || 1 < 2 && 3 > 1 // true
+5. 400 <= 400 && 399 < 400 && (30 > 31 || 400 > 31) // true
+6. true && false && false || false && true // false
+7. true && false || true || false //true
 8. true && false && false || false && true ? true && false && false || false && true : 1 < 2 && 2 > 1
 ```
 
@@ -27,9 +27,9 @@ Given this data structure:
 let data = [0, [], [], [1, 2, 3, [4]]];
 ```
 
-1. How would you access the value `0`?
-2. How would you access the value `3`?
-3. How would you access the value `4`?
+1. How would you access the value `0`? data[0]
+2. How would you access the value `3`? data[3][2]
+3. How would you access the value `4`? data[3][3][0]
 
 ---
 
@@ -43,7 +43,9 @@ let data = [0, [], [], [1, 2, 3, [4]]];
 { label: 'corn', price: 5.3 + '$' };
 { ISBN: 53532, isAvailable: true, author: 'Nakamoto' };
 ```
-
+2 in the first, 3 in second
+key in first is label and price, ISBN, isAvailable, and author for second.
+corn=string price= string isbn = number true = boolean nakamoto = string
 ---
 
 ## Exercise 4
@@ -55,6 +57,6 @@ let person = { name: "Bob", age: 23 };
 
 What is the value of the following expressions?
 
-1. person.name
-2. person['name']
-3. person[name]
+1. person.name // bob
+2. person['name'] //bob
+3. person[name] undefined 
